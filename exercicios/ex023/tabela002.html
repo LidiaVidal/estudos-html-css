@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }  
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(171, 171, 171);
+        }
+
+        thead {
+            background-color: rgb(171, 171, 171);
+            color: white;
+        }
+
+        tbody > tr:nth-child(even) { /*Par ou 2n*/
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) { /*Impar ou 2n-1*/
+            background-color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    Anatomia para tabelas grandes
+    Table 
+        caption - texto
+        Thead
+            Tr, Td, TH
+        Tbody
+            Tr, Td, TH
+        Tfoot
+            Tr, Td, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">11 890 517</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">...</td>
+            </tr>
+        </tfoot>
+    </table>      
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima necessitatibus odio officiis, aperiam, eveniet voluptate quam suscipit porro aliquid quis laborum, molestias aliquam! Perspiciatis ullam fugiat temporibus vitae accusantium praesentium.
+    Eius sequi corporis eum tempore porro nisi, magnam ut, consequatur aut nobis eos incidunt quibusdam atque non iste sit, vitae id? Atque exercitationem mollitia qui, voluptatem explicabo praesentium optio modi.
+    Sapiente vitae enim nostrum est repellat, corrupti consectetur voluptate officia corporis cum non ratione aliquam eligendi! Veritatis et expedita assumenda, voluptatibus mollitia quod corrupti, molestiae unde similique esse culpa quia.
+    Obcaecati quo id deserunt quis perspiciatis cumque molestiae voluptate maxime. Facere veritatis minima voluptates fuga saepe. Ad aperiam sint officiis, molestias rerum earum at adipisci doloribus maxime odit inventore expedita.
+    Molestiae dolorem deserunt repellendus harum quos sit labore excepturi corporis nemo officiis incidunt, provident iure praesentium vero veritatis perferendis similique exercitationem reiciendis saepe laudantium voluptas hic velit natus ratione! Expedita.</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima necessitatibus odio officiis, aperiam, eveniet voluptate quam suscipit porro aliquid quis laborum, molestias aliquam! Perspiciatis ullam fugiat temporibus vitae accusantium praesentium.
+    Eius sequi corporis eum tempore porro nisi, magnam ut, consequatur aut nobis eos incidunt quibusdam atque non iste sit, vitae id? Atque exercitationem mollitia qui, voluptatem explicabo praesentium optio modi.
+    Sapiente vitae enim nostrum est repellat, corrupti consectetur voluptate officia corporis cum non ratione aliquam eligendi! Veritatis et expedita assumenda, voluptatibus mollitia quod corrupti, molestiae unde similique esse culpa quia.
+    Obcaecati quo id deserunt quis perspiciatis cumque molestiae voluptate maxime. Facere veritatis minima voluptates fuga saepe. Ad aperiam sint officiis, molestias rerum earum at adipisci doloribus maxime odit inventore expedita.
+    Molestiae dolorem deserunt repellendus harum quos sit labore excepturi corporis nemo officiis incidunt, provident iure praesentium vero veritatis perferendis similique exercitationem reiciendis saepe laudantium voluptas hic velit natus ratione! Expedita.</p> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima necessitatibus odio officiis, aperiam, eveniet voluptate quam suscipit porro aliquid quis laborum, molestias aliquam! Perspiciatis ullam fugiat temporibus vitae accusantium praesentium.
+    Eius sequi corporis eum tempore porro nisi, magnam ut, consequatur aut nobis eos incidunt quibusdam atque non iste sit, vitae id? Atque exercitationem mollitia qui, voluptatem explicabo praesentium optio modi.
+    Sapiente vitae enim nostrum est repellat, corrupti consectetur voluptate officia corporis cum non ratione aliquam eligendi! Veritatis et expedita assumenda, voluptatibus mollitia quod corrupti, molestiae unde similique esse culpa quia.
+    Obcaecati quo id deserunt quis perspiciatis cumque molestiae voluptate maxime. Facere veritatis minima voluptates fuga saepe. Ad aperiam sint officiis, molestias rerum earum at adipisci doloribus maxime odit inventore expedita.
+    Molestiae dolorem deserunt repellendus harum quos sit labore excepturi corporis nemo officiis incidunt, provident iure praesentium vero veritatis perferendis similique exercitationem reiciendis saepe laudantium voluptas hic velit natus ratione! Expedita.</p> 
+</body>
+</html>
